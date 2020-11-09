@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Music Recommender</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #fdc7d4;
+            font-family: "Calibri Light";
+            font-size: large;
+        }
+        h1{
+            font-weight: bold;
+        }
+        li{
+            font-weight: bold;
+            color:darkgrey;
+        }
+    </style>
+</head>
+<body>
+{% include 'includes/_navbar.html' %}
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<div class="container">
+
+    {% block body %}{% endblock %}
+
+</div>
+
+
+</body>
+</html>

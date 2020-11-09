@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div>
+    <h3>You are listening to:</h3>
+    <h1>{{t1}}</h1>
+    <br>
+    {% for song in m: %}
+        {% set songURI = song.uri%}
+    {% endfor %}
+
+    <h3>Recommended song:</h3>
+    <h2>{{s1}}</h2>
+
+</div>
+
+{% endblock %}

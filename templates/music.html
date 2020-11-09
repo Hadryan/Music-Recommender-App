@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div>
+
+    <h1>Music List</h1>
+<br>
+    <ul class="list-group">
+        {% for song in ml: %}
+            {% set songURI = song.uri%}
+            <li class="list-group-item"><a href="song/{{song.title}}" >{{song.artist}} - {{song.title}}</a></li>
+        {% endfor %}
+    </ul>
+
+
+</div>
+{% endblock %}
